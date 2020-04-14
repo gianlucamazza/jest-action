@@ -1,4 +1,5 @@
-FROM node:${node_version}
+RUN echo "Oh dang look at that!!!: $node_version"
+FROM node:$node_version
 
 RUN apk update && \
     apk upgrade && \
